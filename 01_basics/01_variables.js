@@ -8,6 +8,8 @@ let accountState; //not initialised ~~ undefined
 Prefer not to use-- 
 Var coz of issue in Block scope & Functional scope
 */
+
+
 // accountId = 123 //not allowed
  accountEmail ="s@gmail.com"
 accountPassword ="456"
