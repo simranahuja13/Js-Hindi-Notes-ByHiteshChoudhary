@@ -15,3 +15,4 @@ Difference is based on how data is stored in memory and how data is accessed...
 const id = Symbol('123')
 const anotherId = Symbol('123')
 console.log(id === anotherId); // false
+
