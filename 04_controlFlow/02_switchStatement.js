@@ -1,4 +1,4 @@
-// checking value --- multiple condition 
+/// checking value --- multiple condition 
 
 // use in Redux
 // switch (key) {
