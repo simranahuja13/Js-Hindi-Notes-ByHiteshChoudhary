@@ -52,12 +52,18 @@
 
 
 
-// const user={
-//  username:"hitesh",
-//   price: 399
-
+// const user = {
+//     username: "hitesh",
+//     price: 399 , 
 // }
-// const handleObject(anyobj){
-//     console.log(`Username is ${anyobj.username} and price is ${anyobj.price}`);
-//    }
-//    handleObject(user)
+function handleObject (anyobj){
+    console.log(`username: ${anyobj.username} , price: ${anyobj.price}`);
+   }
+   // handleObject(user)
+   
+   ///Direct object
+   handleObject({
+       username: "hitesh",
+       price: 399,
+   })
+   
