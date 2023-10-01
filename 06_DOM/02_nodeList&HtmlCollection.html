@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        body{
+            background-color: black;
+color: white
+        }
+    </style>
+</head>
+<body>
+
+    <div class="black">
+        <h1 id = "title" class= "heading" > DOM learning on Chai aur Code>  <span style="display: none "> Test Text </span> </h1>
+        <p > Lorem ipsum dolor sit amet consectetur. </p>
+     <h2>All</h2>
+     <h2>Are</h2>
+     <h2>Busy</h2>
+     <input type="text" value=""> Hi User
+     <ul>
+       <li class="list-item">1</li>
+       <li class="list-item">2</li>
+       <li class="list-item">3</li>
+       <li class="list-item">4</li>
+     </ul>
+    </div>
+    <script>
+    //     document.getElementById("title").id
+    //   =>  value -- (title)
+
+    // .class => undefined
+
+    // .className = heading
+
+    // .getAttribute('class') => heading
+
+    // .setAttribute = ('class' , 'text')-- override heading
+   // ('class' , 'text heading') -- both
+
+//    document.getElementById("title").style.backgroundColor = 'red' ;
+   
+//    document.getElementById("title").style.padding = '20px' ;
+
+
+// *********** Adding the text ***********
+
+// document.getElementById("title").textContent => //' DOM learning on Chai aur Code'
+// .innerHTML => same
+// .innerText => same
+
+
+//*********** innerText and textContent and innerHTML DIFF ***********
+
+// innerText =>'DOM learning on Chai aur Code --- only visible'
+// textContent  => not visible also ==== ' DOM learning on Chai aur Code  Test Text'
+// innerHTML => tag also ' DOM learning on Chai aur Code&gt;  <span style="display: none ">Test Text </span> '
+
+// document.querySelector("h2").innerHTML = ` <h2> Butterfly</h2>`
+
+// document.querySelector("input[type=text]")
+// document.querySelector('p:first-child')
+
+// 
+// document.querySelector('ul').querySelector('li').style.backgroundColor = 'green';
+
+
+// NodeList and HTMLCollection are not pure Arrays
+
+// agr All likhege to index VALUE BHI DENA PDEGA  ya to sb ko select krne ke liye for each ////
+
+// const tempLiList = document.querySelector('ul').querySelectorAll('li')
+
+// to select all
+// tempLiList.forEach((l)=>l.style.backgroundColor="red")
+// tempLiList[1].style.backgroundColor="red" 
+
+const lists = document.getElementsByClassName('list-item')
+
+// lists.forEach((l)=>l.style.backgroundColor="red") // for-each not a function
+
+// Array.from(lists).forEach((l)=>l.style.backgroundColor="red")
+
+
+
+
+</script>
+</body>
+</html>

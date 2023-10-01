@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 2em
+        }
+    </style>
+</head>
+<body >
+    <script>
+   const div =  document.createElement('div') // => object milega
+   console.log(div);
+
+div.className = 'main' // semicolon ni dena hai ni to class add ni hoga
+div.id = Math.floor(Math.random()*10+1)
+div.setAttribute('title' , 'TITLE')
+div.style.backgroundColor='green'
+div.style.padding='20px'
+div.style.color='white'
+// div.innerText = "Chai aur Code"
+const addText = document.createTextNode("chai aur code")
+div.appendChild(addText)
+document.body.appendChild(div)
+    </script>
+</body>
+</html>
