@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htnml Events </title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    // Events -- Activities
+ 
+    // document.querySelector('#owl').onclick= function(){
+    //     alert('owl clicked');
+    // } // Problems with it
+  
+    //   use Event listeners coz it gives propagation abilty
+    // document.querySelector('#owl').addEventListener('click', function(){
+    //     alert('owl clicked again');
+    // })
+
+    // attachEvent() =>  Internet Explorer pe chalane ke liye use krte the
+    // jquery => .on
+
+
+// type => keyboard / mouse event
+// timestamp 
+// preventDefault
+// target 
+// toElement
+// currentTarget
+// srcElement 
+// clientX , clientY
+// screenX , screenY
+// altKey , ctrlKey , shiftKey , keyCode
+
+// document.querySelector('#owl').addEventListener('click', function(e){
+//        console.log(`${e} owl clicked `);
+//        // events => browser / environment events
+//     // e.stopPropagation // bubbling ni hoga
+    // }); 
+
+     
+     /*
+      false =>  default -- owl 
+                            ul
+     
+     true => top to bottom -- ul
+                             owl    */
+   
+  
+
+//     document.querySelector('#images').addEventListener('click', function(e){
+//        console.log('clicked inside the ul');
+
+//     }); //// clicked inside the ul
+
+//      // event propgataion => event bubbling / event capturing
+
+//     // bubbling - bottom to top
+//     // capturing -  top to bottom
+
+//  document.querySelector('#google').addEventListener('click', function(e){
+//         e.preventDefault(); // prevent to go on another page
+//         e.stopPropagation(); // click on ul ni ayega
+//  },false);
+
+
+    // document.querySelector('#images').addEventListener('click' , function(e){
+        //  console.log(e.target.remove()); // jispe event hua wo pura element with attribute ata hai
+        //  e.target.parentNode.remove();  // easy way // 1st way
+
+        //  console.log(e.target.tagName); // IMG
+            //   if(e.target.tagName === 'IMG'){ // 2nd way
+            //     e.target.parentNode.remove();
+            //   }
+         
+        // let removeIt = e.target.parentNode // 3rd way
+        // console.log(removeIt); //li
+    //    console.log(removeIt.parentNode ) // ul
+    //    removeIt.parentNode.removeChild(removeIt) 
+
+    // }, false)
+
+</script>
+</html>
