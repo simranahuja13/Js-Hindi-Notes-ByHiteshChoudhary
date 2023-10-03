@@ -76,6 +76,15 @@ console.log(Array.of(score1 , score2)); //[ 100, 400 ] // new array
 
 
 
+const arr = new Array(4).fill(1)
+// console.log(arr); // [ 1, 1, 1, 1 ]
+const unique = [...new Set(arr)] // 1
+console.log(unique);
+
+
+
+
+
 
 
 
