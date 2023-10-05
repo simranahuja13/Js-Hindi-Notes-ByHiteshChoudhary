@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 >Chai aur Code</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+    <script>
+
+//         const sayHi = function(){console.log("hi")}
+//         // setTimeout(sayHi,2000 )// one time 
+//         // setInterval(sayHi, 4000) //   continuosly 
+        
+//     const changeText = function(){
+//         document.querySelector('h1').innerHTML = 'Started Javascript'
+//         // console.log('running')
+//     } 
+//     const changeMe = setTimeout(changeText , 2000)
+    
+//   document.querySelector('#stop').addEventListener('click',function(){
+
+//       clearTimeout(changeMe)
+//     console.log('stopped')
+//   }
+//   )
+
+
+// setInterval -- third para
+let intervalId;
+const sayDate = function(str){
+    console.log(str , Date.now()); 
+}
+
+// 
+  
+document.querySelector('#start').addEventListener('click',function(){
+    intervalId = setInterval(sayDate , 2000 , "Simran") 
+})
+
+document.querySelector('#stop').addEventListener('click',function(){
+    clearInterval(intervalId)
+ 
+})
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black">
+    <button id="orange">Orange </button>
+    <button id="red">Red</button>
+</body>
+<script>
+    // document.getElementById("orange").onclick = function(){
+    //     document.body.style.backgroundColor = "orange"  ; 
+    // }
+    // document.getElementById("red").onclick = function(){
+    //     document.body.style.backgroundColor = "red"  ; 
+    // }
+
+   function clickHandler(color){
+    // document.body.style.backgroundColor = `${color}` ;
+     return function(){
+        document.body.style.backgroundColor = `${color}` ;
+    }
+   }
+   document.getElementById("orange").onclick = clickHandler("orange")
+   document.getElementById("red").onclick = clickHandler("red") // function dena tha but execute hogya
+</script>
+</html>
